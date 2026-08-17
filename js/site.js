@@ -17,8 +17,11 @@
     });
     const hero = $("#heroArt"); const heroUrl = Store24.safeUrl(settings.hero_image_url);
     if (hero && heroUrl) { hero.style.backgroundImage = `url("${heroUrl.replace(/["\\]/g, "")}")`; hero.classList.add("has-image"); }
-    const logoUrl = Store24.safeUrl(settings.logo_url);
-    if (logoUrl) $$(".wordmark").forEach((wordmark) => { wordmark.innerHTML = `<img class="brand-logo" src="${Store24.esc(logoUrl)}" alt="24 Creative Studio">`; });
+    const logoUrl = Store24.safeUrl(settings.logo_url) || Store24.DEFAULTS.logo_url;
+    if (logoUrl) {
+      $$(".wordmark").forEach((wordmark) => { wordmark.innerHTML = `<span class="brand-logo-frame"><img class="brand-logo" src="${Store24.esc(logoUrl)}" alt="24 Creative Studio"></span>`; });
+      $$(".footer-wordmark").forEach((wordmark) => { wordmark.innerHTML = `<span class="footer-logo-frame"><img src="${Store24.esc(logoUrl)}" alt="24 Creative Studio"></span>`; });
+    }
     const whatsapp = String(settings.whatsapp || Store24.DEFAULTS.whatsapp).replace(/\D/g, "");
     $$('[data-whatsapp-link]').forEach((link) => { link.href = `https://wa.me/${whatsapp}?text=${encodeURIComponent("Olá, gostaria de conhecer as peças disponíveis na 24 Creative Studio.")}`; });
     $$('[data-custom-whatsapp]').forEach((link) => { link.href = `https://wa.me/${whatsapp}?text=${encodeURIComponent("Olá, gostaria de saber mais sobre personalização de peças na 24 Creative Studio.")}`; });

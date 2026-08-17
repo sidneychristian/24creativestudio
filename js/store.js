@@ -12,7 +12,7 @@
     hero_title: "Creativity\nat its finest.",
     hero_copy: "Culture, style and intentional pieces manufactured in Maputo.",
     hero_image_url: "",
-    logo_url: "",
+    logo_url: "assets/24-creative-studio-logo.jpg",
     about_title: "Creativity, culture and style.",
     about_copy: "A 24 Creative Studio é uma marca de roupa orientada pela criatividade, cultura e estilo. As peças são produzidas em Maputo e pensadas como formas de expressão."
   };

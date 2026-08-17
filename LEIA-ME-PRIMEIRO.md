@@ -100,7 +100,7 @@ Abra:
 
 `https://SEU-DOMINIO.vercel.app/admin/login`
 
-Também existe um acesso discreto no último **24** do rodapé do website.
+Também existe um pequeno **ponto dourado** no canto direito do rodapé. Clique nesse ponto para abrir o login administrativo.
 
 Entre com o email e a senha criados no Supabase. No painel, siga esta ordem:
 
@@ -116,7 +116,7 @@ No separador **Website**, também pode alterar os textos, WhatsApp, prazo/valor 
 
 As roupas reais devem ser adicionadas pelo painel. Os cartões atuais são claramente marcados como demonstração e desaparecem quando existir pelo menos um produto real ativo.
 
-O ficheiro `assets/logo-reference.png` contém a captura de tela fornecida. Como a imagem é pequena e desfocada, o website utiliza uma versão tipográfica limpa da marca. Quando receber a logo original em PNG, PDF ou SVG, ela poderá substituir a referência.
+O ficheiro `assets/24-creative-studio-logo.jpg` é o logótipo oficial utilizado no cabeçalho, no rodapé e na área administrativa. Pode substituí-lo futuramente por uma versão PNG de maior qualidade, mantendo o mesmo nome de ficheiro.
 
 ## Atualizações futuras
 
