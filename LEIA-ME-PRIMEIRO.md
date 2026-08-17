@@ -118,6 +118,8 @@ As roupas reais devem ser adicionadas pelo painel. Os cartões atuais são clara
 
 O ficheiro `assets/24-creative-studio-logo.jpg` é o logótipo oficial utilizado no cabeçalho, no rodapé e na área administrativa. Pode substituí-lo futuramente por uma versão PNG de maior qualidade, mantendo o mesmo nome de ficheiro.
 
+A mesma imagem também aparece como ícone no separador do navegador. Depois de publicar uma atualização, pode ser necessário fechar e abrir novamente o separador para o navegador atualizar esse ícone.
+
 ## Atualizações futuras
 
 Depois de ligar GitHub e Vercel, cada commit enviado à branch principal cria automaticamente uma nova publicação.

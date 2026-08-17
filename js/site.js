@@ -1,5 +1,10 @@
 (function () {
   "use strict";
+  const favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "image/jpeg";
+  favicon.href = "assets/24-creative-studio-logo.jpg?v=3";
+  document.head.appendChild(favicon);
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   let settings = { ...Store24.DEFAULTS };

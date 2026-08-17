@@ -1,5 +1,10 @@
 (function () {
   "use strict";
+  const favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "image/jpeg";
+  favicon.href = "../assets/24-creative-studio-logo.jpg?v=3";
+  document.head.appendChild(favicon);
   const form = document.querySelector("#loginForm");
   const errorBox = document.querySelector("#loginError");
   const button = document.querySelector("#loginButton");
