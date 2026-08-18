@@ -116,10 +116,16 @@ No separador **Website**, também pode alterar os textos, WhatsApp, prazo/valor 
 
 As roupas reais devem ser adicionadas pelo painel. Os cartões atuais são claramente marcados como demonstração e desaparecem quando existir pelo menos um produto real ativo.
 
-O ficheiro `assets/24-creative-studio-logo.jpg` é o logótipo oficial utilizado no cabeçalho, no rodapé e na área administrativa. Pode substituí-lo futuramente por uma versão PNG de maior qualidade, mantendo o mesmo nome de ficheiro.
+O ficheiro `assets/24-creative-studio-logo.jpg` contém a marca simplificada “24”. É utilizado no cabeçalho compacto e como ícone no separador do navegador.
 
-A mesma imagem também aparece como ícone no separador do navegador. Depois de publicar uma atualização, pode ser necessário fechar e abrir novamente o separador para o navegador atualizar esse ícone.
+O ficheiro `assets/24-creative-studio-wordmark.jpeg` contém o logótipo completo “24 Creative Studio”. É utilizado no menu móvel, no rodapé e na área administrativa, onde existe mais espaço para o nome ficar legível.
+
+Depois de publicar uma atualização, pode ser necessário fechar e abrir novamente o separador para o navegador atualizar o ícone.
 
 ## Atualizações futuras
 
 Depois de ligar GitHub e Vercel, cada commit enviado à branch principal cria automaticamente uma nova publicação.
+
+## Erro `category_id` ao adicionar produtos
+
+Se o painel mostrar `Could not find the 'category_id' column of 'products' in the schema cache`, abra o ficheiro `supabase/corrigir-products.sql`, copie todo o conteúdo e execute-o no **SQL Editor** do Supabase. O ficheiro acrescenta os campos e relacionamentos em falta sem apagar os dados existentes e atualiza a cache da API.
